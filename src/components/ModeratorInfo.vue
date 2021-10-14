@@ -2,10 +2,10 @@
   <div class="moder-info">
     <div class="moder-info__title">Модераторы</div>
     <ul class="moder-info__list">
-      <div class="moder-info__person"
+      <li class="moder-info__person"
         v-for="(item, index) in persons"
         v-bind:key="index"
-      >{{ item.person.caption }}</div>
+      >{{ item.person.caption }}</li>
     </ul>
   </div>  
 </template>

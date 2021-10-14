@@ -111,7 +111,7 @@ export default {
 }
 .event-session__content {
   width: 100%;
-  padding: 32px 20px 20px 80px;
+  padding: 32px 20px 20px;
   position: relative;
   border-left: 1px solid gainsboro;
 }
@@ -140,10 +140,13 @@ export default {
   margin-bottom: 20px;
 }
 .event-session__caption {
+  padding-left: 60px;
   font-size: 18px;
 }
 .event-session__desc {
   margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 60px;
 }
 .event-session__report:not(:last-child) {
   margin-bottom: 20px;

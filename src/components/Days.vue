@@ -55,7 +55,9 @@ export default {
   methods: {
     onClickBottomButton(index) {
       this.activeTabIndex = index
-      this.$refs.container.scrollIntoView()
+      this.$refs.container.scrollIntoView({
+        behavior: 'smooth'
+      })
     }
   }
 }
@@ -79,6 +81,7 @@ export default {
   border-bottom-left-radius: unset;
   border-bottom-right-radius: unset;
   box-shadow: unset;
+  transition: unset;
 }
 .tabs__button:not(:last-child) {
   margin-right: 3px;

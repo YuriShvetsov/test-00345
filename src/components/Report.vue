@@ -47,15 +47,15 @@ export default {
 .report__duration {
   padding: 0 10px;
   position: absolute;
-  left: -140px;
+  left: -93px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(-100%, -50%);
   color: #fff;
   background-color: gainsboro;
 }
 .report__duration::before {
   content: '';
-  width: 99px;
+  width: 92px;
   height: 1px;
   position: absolute;
   left: 100%;
@@ -71,17 +71,24 @@ export default {
 .report__img-plug {
   width: 70px;
   height: 70px;
-  background-color: gainsboro;
+  background-image: url(../assets/images/person.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  border: 4px solid whitesmoke;
   border-radius: 50%;
 }
 .report__caption {
   margin-top: 8px;
-  font-size: 16px;
+  font-size: 17px;
+  font-weight: bold;
 }
-.report__speaker-name,
-.report__speaker-country {
+.report__speaker-name {
   font-size: 16px;
   font-weight: bold;
+}
+.report__speaker-country {
+  font-size: 16px;
 }
 .report__link {
   margin-top: 8px;
