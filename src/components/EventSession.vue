@@ -174,4 +174,89 @@ export default {
   background-color: #e6e6e6;
   border-color: #adadad;
 }
+
+@media screen and (max-width: 991px) {
+
+  .event-session__caption {
+    padding-left: 20px;
+    font-size: 16px;
+  }
+
+  .event-session__desc {
+    margin-top: 0;
+    padding-left: 20px;
+  }
+
+  .event-session__time {
+    max-width: 140px;
+    margin-top: 32px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .event-session__content {
+
+
+    &::before {
+      width: 20px;
+      top: 47px;
+    }
+
+    &::after {
+      left: 20px;
+      top: 45px;
+    }
+  }
+
+  .event-session__report:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+  .event-session {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .event-session__content {
+    border-bottom: 1px solid gainsboro;
+  }
+
+  .event-session__time {
+    width: 100%;
+    max-width: unset;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    background-image: none;
+  }
+
+  .event-session__time::before {
+    display: block;
+    left: 1px;
+    transform: translate(-50%, 0);
+    z-index: 1;
+  }
+
+  .event-session__time::after {
+    content: '';
+    display: block;
+    width: calc(50% - 60px);
+    height: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: unset;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 0%, gainsboro 0%, gainsboro calc(0% + 1px), rgba(255, 255, 255, 0) calc(0% + 1px), rgba(255, 255, 255, 0));
+    border-left: 1px solid gainsboro;
+    border-radius: 0;
+  }
+
+}
 </style>

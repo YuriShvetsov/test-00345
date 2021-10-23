@@ -93,7 +93,12 @@ export default {
   font-size: 14px;
   color: #333;
 }
-.dropdown__content {
-  border-bottom: 1px solid gainsboro;
+
+@media screen and (max-width: 991px) {
+
+  .dropdown__opener {
+    font-size: 18px;
+  }
+
 }
 </style>

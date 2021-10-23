@@ -107,4 +107,59 @@ export default {
 .report__link:hover .report__link-name {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 991px) {
+
+  .report__duration {
+    left: -70px;
+
+    &::before {
+      width: 50px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 720px) {
+
+  .report {
+    flex-direction: column;
+    justify-content: unset;
+    align-items: center;
+    text-align: center;
+  }
+
+  .report__side {
+    width: unset;
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+  .report::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-100%, 0);
+    background-color: gainsboro;
+  }
+
+  .report__duration {
+    left: 15px;
+    top: 15px;
+    transform: unset;
+
+    &::before {
+      display: none;
+    }
+  }
+
+}
 </style>

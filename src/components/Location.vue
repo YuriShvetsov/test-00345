@@ -14,6 +14,7 @@
           v-slot:content
         >
           <event-session
+            class="event-session"
             v-for="session of location.eventSessions"
             v-bind:key="session.id"
             v-bind:session="session"

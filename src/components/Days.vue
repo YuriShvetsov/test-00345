@@ -108,4 +108,12 @@ export default {
 .tabs__location:not(:last-child) {
   margin: 20px 0;
 }
+
+@media screen and (max-width: 991px) {
+
+  .tabs__active-caption {
+    font-size: 18px;
+  }
+
+}
 </style>
